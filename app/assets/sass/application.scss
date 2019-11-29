@@ -1,0 +1,60 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.hmcts-logo {
+    width: 100%;
+    background: url("https://assets.publishing.service.gov.uk/collections/govuk_publishing_components/crests/org_crest_18px_x2-b4af7a6d71fbd9bfb3b9550bc0e1d856e01e5b388ad8e18717b4ad60e73705ff.png") no-repeat 6px 0;
+    background-size: auto 26px;
+    border-left: 2px solid #0b0c0c;
+    padding-left: 7px;
+    padding-top: 25px;
+}
+
+.logo-name {
+    font-size: 18px;
+}
+
+.guidance-block {
+    background: #1d70b8;
+    padding: 60px 30px 30px 30px;
+}
+
+.guidance-block span,
+.guidance-block h1,
+.guidance-block p {
+    color: #fff !important;
+}
+
+.faux-title {
+    display: inline-block;
+}
+
+.info-box {
+    background: #f3f2f1; /* may be too dark
+    background: rgba(177,180,182, 0.5); */
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.probate-table th, .probate-table td {
+    font-size: 0.85em; 
+}
