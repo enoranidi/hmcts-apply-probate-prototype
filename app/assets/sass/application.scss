@@ -41,14 +41,35 @@ $govuk-assets-path: '/govuk/assets/';
     color: #fff !important;
 }
 
+.page-menu {
+
+}
+
 .faux-title {
     display: inline-block;
 }
 
-.info-box {
-    background: #f3f2f1; 
-    /* may be too dark
-    background: rgba(177,180,182, 0.5); */
+.page-menu .govuk-list {
+    list-style: none;
+}
+
+.page-menu .number {
+    min-width: 1.5em;
+    display: table-cell;
+}
+
+.page-menu a {
+    text-decoration: none;
+}
+
+.page-menu a:hover {
+    text-decoration: underline;
+}
+
+.cta-box {
+    /* lighter grey
+    background: #f3f2f1; */
+    background: rgba(177,180,182, 0.5);
     padding: 30px;
 }
 
