@@ -1,47 +1,8 @@
 
-{% extends "layout.html" %}
+{% extends "layout_guidance.html" %}
 
 {% block pageTitle %}
 How to apply for probate
-{% endblock %}
-
-{% block header %}
-<header class="govuk-header" role="banner" data-module="govuk-header">
-	<div class="govuk-header__container govuk-width-container govuk-!-padding-top-1">
-		<div class="govuk-header__logo govuk-!-margin-top-1">
-			<a href="/" class="govuk-header__link govuk-header__link--homepage">
-				<span class="govuk-header__logotype">
-					<svg role="presentation" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 97" height="30" width="36">
-					<path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
-					<image src="/assets/images/govuk-logotype-crown.png" xlink:href="" class="govuk-header__logotype-crown-fallback-image" width="36" height="32"></image>
-					</svg>
-					<span class="govuk-header__logotype-text">GOV.UK</span>
-				</span>
-			</a>
-		</div>
-		<div class="govuk-header__content">
-			<form action="#" method="get" class="site-search">
-				<div class="govuk-!-width-one-half govuk-form-group govuk-!-margin-bottom-1 float-right">
-					<input class="govuk-input search-icon" id="search" name="search" type="text" value="Search">
-				</div>
-			</form>
-		</div>
-	</div>
-</header>
-{% endblock %}
-
-{% block beforeContent %}
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "https://www.gov.uk/"
-    },
-    {
-      text: "How to apply for probate"
-    }
-  ]
-}) }}
 {% endblock %}
 
 {% block content %}
@@ -173,7 +134,7 @@ How to apply for probate
 		<p class="govuk-body">If you’re a spouse, civil partner or child over 18 you can apply as an administrator for a ‘letter of administration’ online, if you’re not any of these, you’ll need to apply for the letter by post.</p>
 		<p class="govuk-body">If you are unsure, check if you can inherit the estate under the intestate rules.</p>
 		<h3 class="govuk-heading-m">2.8 Work out the value of the estate</h3>
-		<p class="govuk-body">You’ll need to tell us the estate’s value in your probate application, this should be the <a href="https://www.gov.uk/valuing-estate-of-someone-who- died/tell-hmrc-estate-value" target="_blank">same amount</a> you reported to HMRC. Find out what you need to do to <a href="https://www.gov.uk/valuing-estate-of-someone- who-died" target="_blank">report the estate’s value</a>.</p>
+		<p class="govuk-body">You’ll need to tell us the estate’s value in your probate application, this should be the <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/tell-hmrc-estate-value" target="_blank">same amount</a> you reported to HMRC. Find out what you need to do to <a href="https://www.gov.uk/valuing-estate-of-someone-who-died" target="_blank">report the estate’s value</a>.</p>
 		<p class="govuk-body">You may still need to pay inheritance tax after you get probate. HMRC will contact you if you need to pay this tax.</p>
 		<p class="govuk-body">If you have any questions about <a href="https://www.gov.uk/inheritance-tax" target="_blank">inheritance tax</a>, contact the Inheritance Tax Helpline on 0300 123 1072. Monday to Friday: 9 am to 5 pm.</p>
 		<h2 id="who-can-apply" class="govuk-heading-l">3. Who can apply</h2>
@@ -285,7 +246,7 @@ How to apply for probate
 		<p class="govuk-body">If you are applying online you’ll need to pay by debit or credit card.</p>
 		<p class="govuk-body">If you are applying by post, you can pay by:</p>
 		<ul class="govuk-list govuk-list--bullet">
-			<li><a href="https://www.gov.uk/government/publications/directory-of-probate-registries-and- appointment-venues-pa4sot" target="_blank">calling the card payment phone number of your district probate registry</a> between 9:30 am and 3 pm Monday to Friday to pay by debit or credit card - This must be done before you submit your forms and you’ll be given a reference number to send with your documents</li>
+			<li><a href="https://www.gov.uk/government/publications/directory-of-probate-registries-and-appointment-venues-pa4sot" target="_blank">calling the card payment phone number of your district probate registry</a> between 9:30 am and 3 pm Monday to Friday to pay by debit or credit card - This must be done before you submit your forms and you’ll be given a reference number to send with your documents</li>
 			<li>sending a cheque payable to HM Courts and Tribunals Service with your documents to the probate registry to which you are applying. Print the full name of the person who has died on the back of the cheque and their date of death.</li>
 		</ul>
 		<h3 class="govuk-heading-m">6.3 If you cannot pay the fee</h3>
@@ -297,14 +258,14 @@ How to apply for probate
 		PO Box 12625<br />
 		Harlow<br />
 		CM20 9QE</p>
-		<p class="govuk-body">If you want to receive your grant in Welsh and English, send your paper form to the <a href="https://courttribunalfinder.service.gov.uk/courts/cardiff- probate-registry-of-wales" target="_blank">Cardiff Registry</a>.</p>
+		<p class="govuk-body">If you want to receive your grant in Welsh and English, send your paper form to the <a href="https://courttribunalfinder.service.gov.uk/courts/cardiff-probate-registry-of-wales" target="_blank">Cardiff Registry</a>.</p>
 		<h2 id="how-long-will-it-take" class="govuk-heading-l">8. How long will it take</h2>
 		<p class="govuk-body">It can take up to 8 weeks to process your application if there’s no delay in receiving your documents.</p>
 		<p class="govuk-body">If you have not heard from us after this time or need help to complete the application, you can contact the Probate Courts and Tribunal Service Centre (CTSC) helpline on 0300 303 0648. The line is open Monday to Friday, 9:30 am to 5 pm.</p>
-		<p class="govuk-body">You can also <a href="https://vcc-eu4.8x8.com/CHAT/common/html/embedded-chat.html? uuid=script_14595160855d233255b17e88.91511449&tenant=aG1jdHN4MTAx&domain=https%3A%2F%2Fwww.apply-for- probate.service.gov.uk&channel=Probate&referrer=https%3A%2F%2Fwww.apply-for-probate.service.gov.uk%2Fdeath- certificate%3F_ga%3D2.77513942.234254885.1572347606- 472307059.1562260885%23&popup=true&popuporigin=button&startedbychatapi=false&syncrequired=false&busHandlerURL=https%3A%2F%2Fwww.apply-for- probate.service.gov.uk%2Fpublic%2Fwebchat%2Fjavascript%2Fhmcts-webchat-busHandler.js&stylesheetURL=https%3A%2F%2Fwww.apply-for- probate.service.gov.uk%2Fpublic%2Fwebchat%2Fcss%2Fhmcts-webchat-gds-v3.css" target="_blank">chat with an agent online</a> using our Webchat service. This service is open Monday to Friday, 9:30am to 5pm.</p>
+		<p class="govuk-body">You can also <a href="https://vcc-eu4.8x8.com/CHAT/common/html/embedded-chat.html?uuid=script_14595160855d233255b17e88.91511449&tenant=aG1jdHN4MTAx&domain=https%3A%2F%2Fwww.apply-for-probate.service.gov.uk&channel=Probate&referrer=https%3A%2F%2Fwww.apply-for-probate.service.gov.uk%2Fdeath-certificate%3F_ga%3D2.77513942.234254885.1572347606-472307059.1562260885%23&popup=true&popuporigin=button&startedbychatapi=false&syncrequired=false&busHandlerURL=https%3A%2F%2Fwww.apply-for-probate.service.gov.uk%2Fpublic%2Fwebchat%2Fjavascript%2Fhmcts-webchat-busHandler.js&stylesheetURL=https%3A%2F%2Fwww.apply-for-probate.service.gov.uk%2Fpublic%2Fwebchat%2Fcss%2Fhmcts-webchat-gds-v3.css" target="_blank">chat with an agent online</a> using our Webchat service. This service is open Monday to Friday, 9:30am to 5pm.</p>
 		<h2 id="after-you-applied" class="govuk-heading-l">9. After you’ve applied</h2>
 		<h3 class="govuk-heading-m">9.1 Manage the estate</h3>
-		<p class="govuk-body">When you receive the grant of probate, you’ll need to <a href="https://www.gov.uk/probate-estate?step-by-step-nav=4f1fe77d-f43b-4581-baf9- e2600e2a2b7a" target="_blank">manage the estate</a> which may involve paying debts and distributing the estate.</p>
+		<p class="govuk-body">When you receive the grant of probate, you’ll need to <a href="https://www.gov.uk/probate-estate?step-by-step-nav=4f1fe77d-f43b-4581-baf9-e2600e2a2b7a" target="_blank">manage the estate</a> which may involve paying debts and distributing the estate.</p>
 		<p class="govuk-body">After you’ve distributed the estate, you’ll need to keep documents showing how you’ve distributed it and <a href="https://www.gov.uk/valuing-estate-of-someone-who-died/records" target="_blank">send final documents</a> to all beneficiaries.</p>
 		<h3 class="govuk-heading-m">9.2 Access probate records online</h3>
 		<p class="govuk-body">If you need to see the original will or the grant, you can <a href="https://www.gov.uk/search-will-probate" target="_blank">search for it in the public records</a> online.</p>
